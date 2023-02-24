@@ -1387,3 +1387,39 @@ padding-left: 3em; */
     font-size: 0.8em;
   }
 }
+
+
+/* Stats section */
+
+.grid-container {
+  display: grid;
+  gap: 30px;
+  background-color: #0e2538;
+  padding: 120px;
+}
+.grid-item {
+  background-color: rgba(86, 208, 245, 0.8);
+  text-align: center;
+  padding: 20px;
+  font-size: 30px;
+  border-radius: 10px;
+  transition: all 0.4s ;
+}
+.grid-item:hover{
+  transform: scale(0.9);
+}
+
+.item1 {
+  grid-column: 1 / span 2;
+  grid-row: 1;
+}
+
+.item2 {
+  grid-column: 3;
+  grid-row: 1 / span 2;
+}
+
+.item5 {
+  grid-column: 1 / span 3;
+  grid-row: 3;
+}

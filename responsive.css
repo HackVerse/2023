@@ -231,4 +231,12 @@
     letter-spacing: 1.5px;
     padding: 5px;
   }
+
+  /* Stats items */
+.grid-container {
+  display: grid;
+  gap: 20px;
+  background-color: #0e2538;
+  padding: 30px;
+}
 }
