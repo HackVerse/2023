@@ -163,12 +163,6 @@ gsap
   .fromTo(".cloud2", { y: -150 }, { y: -250 }, 0)
   .fromTo(".cloud3", { y: -50 }, { y: -400 }, 0);
 
-gsap.to("#iceberg",{
-  y:5,
-  duration:0.3,
-  ease:"easeIn"
-});
-
 // ScrollTrigger.create({
 //   animation: scene1,
 //   trigger: "#schedule-div",
