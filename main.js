@@ -278,6 +278,11 @@ if (!sign) { angle = angle + 45; } else { angle = angle - 45; }
 spinner.setAttribute("style","-webkit-transform: rotateY("+ angle +"deg); -moz-transform: rotateY("+ angle +"deg); transform: rotateY("+ angle +"deg);");
 }
 
+var loader = document.getElementById("preloader");
+
+window.addEventListener("load", function () {
+    loader.style.display = "none";
+});
 
 
 
