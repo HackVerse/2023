@@ -44,26 +44,11 @@ function testScroll() {
   }
 }
 
-// Countdown logic
-
-// var countDownDate = new Date("2023-04-15");;
-
 var date_str = new Date("2023-04-02T18:29:00.000Z"); //.toLocaleString("en-US", { timeZone: "Asia/Kolkata" });
 var countDownDate = Date.parse(date_str);
 
-// var utc = d.getTime() + (d.getTimezoneOffset() * 60000);
-// var countDownDate = new Date(utc + (3600000*+5.5));
-
 // Update the count down every 1 second
 var x = setInterval(function () {
-  // Get today's date and time
-  // var now = new Date().getTime();
-
-  // Get today's date and time in ist
-  // d = new Date();
-  // utc = d.getTime() + (d.getTimezoneOffset() * 60000);
-  // nd = new Date(utc + (3600000*+5.5));
-  // var now =  nd;
 
   var now_str = new Date().toLocaleString("en-US", { timeZone: "Asia/Kolkata" });
   var now = Date.parse(now_str);
@@ -172,15 +157,6 @@ gsap.to("#h2-6", {
   },
 });
 
-// ScrollTrigger.create({
-//   animation: scene1,
-//   trigger: "#about-div",
-//   start: "top top",
-//   end: "80% center",
-//   scrub: 3,
-//   pin: true,
-// });
-
 gsap.to("#a2-1", {
   yPercent: 10,
   ease: "none",
@@ -198,25 +174,6 @@ gsap.to("#a2-2", {
     scrub: 1,
   },
 });
-
-// ScrollTrigger.create({
-//   animation: scene1,
-//   trigger: "#schedule-div",
-//   start: "top top",
-//   end: "80% center",
-//   scrub: 3,
-//   pin: true,
-// });
-
-// scene1.to("#iceberg-1", { x: -160, y: 50 });
-// gsap.to("#iceberg-1", {
-//   yPercent: 10,
-//   ease: "none",
-//   scrollTrigger: {
-//     trigger: ".scrollElement",
-//     scrub: 2,
-//   },
-// });
 
 //reset scrollbar position after refresh
 window.onbeforeunload = function () {
@@ -274,13 +231,7 @@ document.addEventListener("DOMContentLoaded", function (event) {
 var loader = document.getElementById("preloader");
 var navbar = document.getElementById("scroll-spy");
 
-// window.addEventListener("load", function () {
-//   setTimeout(function(){        
-//     loader.style.display = "none";
-//     navbar.classList.add('fixed-top');
-// }, 1000);
-
-  window.addEventListener("DOMContentLoaded", function () {
+window.addEventListener("DOMContentLoaded", function () {
   loader.style.display = "none";
   navbar.classList.add('fixed-top');
 });

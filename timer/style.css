@@ -10,7 +10,6 @@
 
 .geeky-font {
     font-family: 'VT323' !important;
-    /* font-family: 'Esgalon', 'Poppins', 'VT323', Roboto, Cantarell, "Helvetica Neue", sans-serif, cursive; */
     font-size: 80px;
 }
 
@@ -67,7 +66,6 @@ body {
     display: -ms-flexbox;
     display: flex;
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
-    /* font-family: 'Poppins',-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif; */
 }
 
 .container {
