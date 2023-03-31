@@ -1064,7 +1064,8 @@ section {
   align-items: center;
   z-index: 2;
   width: 100%;
-  background-color: #d4eaff;
+  /* background-color: #eaeafb; */
+  background-color: #cbe4ff;
 }
 
 .section-heading-2 h1 {
@@ -1349,7 +1350,7 @@ section {
   padding: 10px ;
   margin: 0px 10px;
   font-size: 20px;
-  color: white;
+  color: rgb(2, 39, 98);
 }
 .active_1{
   border-bottom: solid 4px rgb(196, 24, 24);
