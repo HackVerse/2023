@@ -812,7 +812,7 @@ button:focus {
 
 a {
   color: inherit;
-} 
+}
 
 .sketch-font {
   font-family: "Cabin Sketch", "Poppins", cursive;
@@ -871,7 +871,7 @@ a {
 .navbar-dark .navbar-nav .nav-link {
   color: rgba(255, 255, 255, 0.7);
   font-weight: 600;
-  text-align: center  ;
+  text-align: center;
 }
 
 .navbar-dark .navbar-nav .nav-link :hover {
@@ -901,7 +901,7 @@ a {
 }
 
 /* Countdown Starts Here  */
-#countdown-section{
+#countdown-section {
   background: #69c6fb;
 }
 
@@ -1225,85 +1225,98 @@ section {
   top: -20px;
 } */
 
-/* Tracks Section */
+/* track section styles */
 
-#track-section {
-  position: relative;
-  padding-top: 0%;
-  min-height: 60vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  z-index: 2;
-  width: 100%;
-  background-color: #2d294d;
-  /* background-color: #398dbb; */
-  /* background-color: #021f3b; */
+@-ms-keyframes spin {
+  from {
+    -ms-transform: rotate(0deg);
+  }
+  to {
+    -ms-transform: rotate(360deg);
+  }
 }
-
-.tracks {
-  min-height: 80vh;
-  background-color: #fff;
-  background-size: cover;
-  background-repeat: no-repeat;
-  color: #d1e5dc;
+@-moz-keyframes spin {
+  from {
+    -moz-transform: rotate(0deg);
+  }
+  to {
+    -moz-transform: rotate(360deg);
+  }
 }
-
-.tracks .row {
-  column-gap: 16px;
-  row-gap: 32px;
+@-webkit-keyframes spin {
+  from {
+    -webkit-transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(360deg);
+  }
 }
-
-.tracks .card-img-top {
-  height: 80%;
-  width: auto;
-  transition: all 0.6s;
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
 }
-
-.tracks .card-img-top:hover {
-  transform: scale(0.9);
+@keyframes pan-overlay {
+  from {
+    background-position: 0 0;
+  }
+  to {
+    background-position: 0 -100%;
+  }
 }
-
-.card-img {
-  padding: 32px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+.flake {
+  animation: spin 5000ms infinite linear;
 }
-
-.tracks .card {
-  border-radius: 32px;
-  background-color: #09428b56;
-  min-height: 356px;
+.scene {
+  height: 302px;
+  width: 233px;
 }
-
-.tracks .card-text {
-  text-align: left;
-  font-size: 1rem;
+.scene-container:nth-of-type(even) {
+  padding-top: 150px;
 }
-
-.tracks .card-title {
-  font-size: 1.5rem;
-  font-weight: bold;
-  text-align: center;
+.scene-container:nth-of-type(odd) {
+  padding-top: 20px;
 }
-
-.tracks .list-group-item {
-  background-color: rgba(255, 255, 255, 0.26);
-  text-align: center;
-  font-weight: bold;
-  font-size: 1.15rem;
+.card-wrapper:hover > .slider-wrapper {
+  transform: translateY(-100%);
 }
-
-.tracks .list-group:last-child {
-  border-bottom-left-radius: 32px;
-  border-bottom-right-radius: 32px;
+.front-card,
+.slider {
+  width: 14.5rem;
+  aspect-ratio: 5/6.5;
+  border-radius: 10px;
 }
-
-.tracks .list-group-item.special {
-  font-size: 1rem;
-  text-align: left;
-  font-weight: normal;
+.slider-wrapper {
+  border-radius: 10px;
+  transition: 0.75s all ease-in-out;
+}
+.screen-overlay {
+  background: linear-gradient(
+    rgba(51, 140, 191, 0.5),
+    rgba(51, 140, 191, 0.5) 2px,
+    transparent 1px,
+    transparent 1.5px
+  );
+  background-size: 100% 2%;
+  height: 100%;
+  animation: pan-overlay 22s infinite linear;
+}
+.slider-content {
+  color: white;
+  text-shadow: black 1px 1px;
+  height: 100%;
+}
+#track-cards::-webkit-scrollbar {
+  height: 0.5rem;
+}
+#track-cards::-webkit-scrollbar-track {
+  background-color: #d4eaff;
+}
+#track-cards::-webkit-scrollbar-thumb {
+  background-color: #2e5980;
 }
 
 /*Prize section*/
@@ -1335,18 +1348,18 @@ section {
   padding-bottom: 30px;
 }
 
-.bar{
+.bar {
   display: flex;
   justify-content: center;
   align-items: center;
   margin: 20px;
 }
-.bar-item{
-  padding: 10px ;
+.bar-item {
+  padding: 10px;
   margin: 0px 10px;
   font-size: 20px;
   color: white;
 }
-.active_1{
+.active_1 {
   border-bottom: solid 4px rgb(196, 24, 24);
 }
