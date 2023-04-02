@@ -1274,12 +1274,7 @@ section {
   height: 302px;
   width: 233px;
 }
-.scene-container:nth-of-type(even) {
-  padding-top: 150px;
-}
-.scene-container:nth-of-type(odd) {
-  padding-top: 20px;
-}
+
 .card-wrapper:hover > .slider-wrapper {
   transform: translateY(-100%);
 }
@@ -1317,6 +1312,10 @@ section {
 }
 #track-cards::-webkit-scrollbar-thumb {
   background-color: #2e5980;
+}
+#track-intro {
+  font-size: 1.25rem;
+  font-family: Inter;
 }
 
 /*Prize section*/
