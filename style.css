@@ -1274,7 +1274,15 @@ section {
   height: 302px;
   width: 233px;
 }
-
+.card-wrapper:hover {
+  cursor: pointer;
+}
+.front-card > img {
+  transition: 0.5s all ease-in-out;
+}
+.card-wrapper:hover > .front-card > img {
+  scale: 1.2;
+}
 .card-wrapper:hover > .slider-wrapper {
   transform: translateY(-100%);
 }
