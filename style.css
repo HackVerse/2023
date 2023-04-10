@@ -1352,6 +1352,17 @@ section {
   .prize .prize-card-container .prize-card .prize-card-number:after {
     display: none;
   }
+
+  .prize-section-footer h3{
+    font-size: 1.25rem;
+    padding: 0;
+  }
+
+  .prize-section-footer p{
+    font-size: 1rem;
+    margin: 0;
+    padding: 0;
+  }
 }
 /* Prizes Section End */
 
