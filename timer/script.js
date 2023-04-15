@@ -3,8 +3,8 @@ const second = 1000,
     hour = minute * 60,
     day = hour * 24;
 
-let countDown_end = new Date('Jan 26, 2020 17:00:00').getTime()
-let countDown_start = new Date('Jan 25, 2020 17:00:00').getTime()
+let countDown_end = new Date('Apr 16, 2023 12:00:00').getTime()
+let countDown_start = new Date('Apr 15, 2023 12:00:00').getTime()
 let input_flag = false
 let input = ""
 
